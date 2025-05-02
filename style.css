@@ -51,7 +51,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1.2rem 2rem;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgb(0, 153, 255);
   backdrop-filter: blur(10px);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   position: sticky;
