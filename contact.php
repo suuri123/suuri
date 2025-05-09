@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email   = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
     $message = htmlspecialchars(trim($_POST["message"]));
 
-    $to      = "bbatsuuri351@gmail.com"; // 🌟 Таны и-мэйл хаяг
+    $to      = "bbatsuuri351@gmail.com"; 
     $subject = "Шинэ зурвас хүлээн авлаа";
     $headers = "From: $name <$email>\r\n";
     $headers .= "Reply-To: $email\r\n";
@@ -34,11 +34,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <header>
     <h1>Холбоо Барих</h1>
     <nav>
-      <a href="index.html">🏠 Нүүр</a>
-      <a href="blog.html">📝 Блог</a>
-      <a href="cv.html">📄 CV</a>
+      <a href="index.html"> Нүүр</a>
+      <a href="blog.html"> Блог</a>
+      <a href="cv.html"> CV</a>
     </nav>
-    <button id="modeToggle">🌙 / ☀️</button>
+    <button id="modeToggle">Dark mode on/off</button>
   </header>
 
   <main>
@@ -62,9 +62,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <h3>📬 Зурвас илгээх</h3>
 
       <?php if (!empty($success)): ?>
-        <p style="color:green;">✅ Таны зурвас амжилттай илгээгдлээ. Баярлалаа!</p>
+        <p style="color:green;"> Таны зурвас амжилттай илгээгдлээ. Баярлалаа!</p>
       <?php elseif (!empty($error)): ?>
-        <p style="color:red;">❌ <?= $error ?></p>
+        <p style="color:red;"> <?= $error ?></p>
       <?php endif; ?>
 
       <form method="POST" action="">
